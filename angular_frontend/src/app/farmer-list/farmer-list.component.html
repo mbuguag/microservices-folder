@@ -1,0 +1,23 @@
+<h2>Farmer List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>phoneNumber</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let farmer of farmers">
+            <td>{{farmer.name}}</td>
+            <td>{{farmer.phoneNumber}}</td>
+            <td>
+                <button (click)="updateFarmer(farmer.id) " class="btn btn-info ">Update</button>
+                <button (click) ="deleteFarmer(farmer.id)" class="btn btn-danger " style="margin-left: 10px;">Delete</button>
+                <button (click)="farmerDetails(farmer.id)" class="btn btn-primary " style="margin-left: 10px;">View</button>
+                <!-- <button (click)="downloadExcel()" class="btn btn-success">Export to Excel</button> -->
+
+            </td>
+        </tr>
+    </tbody>
+</table>

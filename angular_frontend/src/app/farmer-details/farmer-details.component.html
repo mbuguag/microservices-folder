@@ -1,0 +1,6 @@
+<h2>Farmer Details</h2>
+<div *ngIf="farmer">
+    <p><strong>Name:</strong> {{ farmer.name }}</p>
+    <p><strong>Phone Number:</strong> {{ farmer.phoneNumber }}</p>
+</div>
+<a routerLink="/farmers" class="btn btn-secondary">Back to List</a>

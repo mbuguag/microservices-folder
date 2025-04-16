@@ -1,0 +1,18 @@
+<div class="col-md-8 offset-md-3">
+    <h3>Update Farmer</h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="farmer.name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">phoneNumber:</label>
+            <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="farmer.phoneNumber" name="phoneNumber">
+        </div>
+
+        <button class="btn btn-success" type="submit"> Submit</button>
+    </form>
+</div>
